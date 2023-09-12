@@ -196,3 +196,13 @@ footer {
   width: 80%;
   overflow: auto;
 }
+
+.productsMain {
+  min-height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 70px;
+  padding: 20px;
+}
+
