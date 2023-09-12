@@ -1,10 +1,9 @@
 {% extends 'base.html.twig' %}
 {% block content %}
     <main class="productsMain">
-        <h2>Tous nos Produits</h2>
+        <h2 class="productsTitle">Tous nos Produits</h2>
         {% for product in ourProducts %}
-            <article>
-                <div class="cloudCard">
+            <article class="cloudCard">
                     <img src="uploads/{{ product.thumbnail }}" alt="nuage" class="cloudThumbnail">
                     <div class="containerNameCloud">
                         <div class="containerNameCloudDetail">
@@ -13,7 +12,6 @@
                         </div>
                         <button class="rent-button">Louer</button>
                     </div>
-                </div>
 
             </article>
         {% endfor %}
