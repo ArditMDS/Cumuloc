@@ -10,6 +10,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  /* background-image: url('../uploads/sky.jpg');
+  background-repeat: repeat;
+  background-size: cover; */
 }
 
 nav {
@@ -146,16 +149,6 @@ h2 {
   transform: scale(1.03);
 }
 
-footer {
-  background-color: var(--main-bg-color);
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--main-txt-color);
-}
-
 .containerSquad {
   max-width: 100%;
   margin: auto;
@@ -183,7 +176,14 @@ footer {
   width: 300px;
   padding-bottom: 25px;
   border-radius: 15px;
+  transition: .3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cardSquadProfil:hover {
+  transform: scale(1.02);
+  transform-origin: left center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 40px;
 }
 
 .cardSquadProfil img {
@@ -208,8 +208,49 @@ footer {
   gap: calc(100%/15);
   padding: 20px;
 }
-
 .productsTitle {
   width: 80%;
 }
+footer {
+  background-color: var(--main-bg-color);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-txt-color);
+  padding-top: 15px;
+}
 
+footer ul {
+  display: flex;
+  gap: 10px;
+  margin: 0 15px;
+}
+footer ul li {
+  margin: 0;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+}
+
+.footerLinks li {
+  font-size: 15px;
+}
+.footerLinks li a {
+  opacity: .7;
+  transition: .3s;
+}
+.footerLinks li a:hover {
+  opacity: 1;
+}
+
+.footerSocialNetworks li a svg {
+  transition: .3s;
+}
+.footerSocialNetworks li a svg:hover {
+  transform: scale(1.2);
+}
