@@ -26,6 +26,9 @@ class Products
     #[ORM\Column]
     private ?int $quantity_left = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $thumbnail = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +78,18 @@ class Products
     public function setQuantityLeft(int $quantity_left): static
     {
         $this->quantity_left = $quantity_left;
+
+        return $this;
+    }
+
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(?string $thumbnail): static
+    {
+        $this->thumbnail = $thumbnail;
 
         return $this;
     }
