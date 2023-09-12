@@ -112,8 +112,9 @@ h2 {
 
 .cloudCard {
   border-radius: 10px;
-  width: calc(100%/5);
+  width: calc(100%/5 - 40px);
   padding: 20px;
+  margin-bottom: 40px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -199,13 +200,17 @@ h2 {
 
 .productsMain {
   min-height: 75vh;
+  width: 80%;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: calc(100%/15);
   padding: 20px;
 }
-
+.productsTitle {
+  width: 80%;
+}
 footer {
   background-color: var(--main-bg-color);
   min-height: 10vh;
