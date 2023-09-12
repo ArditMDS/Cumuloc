@@ -5,6 +5,7 @@
   --main-bg-color: #0F2C59;
   --secondary-bg-color: #4F709C; 
   --main-txt-color: white;
+  --main-txt-family: 'pacifico', sans-serif;
 }
 
 body {
@@ -77,20 +78,33 @@ h1, h2, h3, h4{
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 70px;
+}
+
+.homepageMain h1 {
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-txt-color);
+  font-family: var(--main-txt-family);
+  width: auto;
 }
 
 .containerCloudCard{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
+  min-width: 200px;
+  margin: auto;
   justify-content: space-around;
 }
 
-.containerCloudCard h2 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 60px;
+h2 {
+  width: 80%;
+  margin: 2em auto;
+  font-family: var(--main-txt-family);
+  color: var(--secondary-bg-color);
+  font-size: 2em;
 }
 
 .cloudCard {
@@ -142,7 +156,12 @@ footer {
 }
 
 .containerSquad {
-  max-width: 80%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.containerSquad p {
+  width: 80%;
   margin: auto;
 }
 
@@ -159,20 +178,21 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   width: 300px;
-  padding: 10px;
+  padding-bottom: 25px;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .cardSquadProfil img {
   background-color: black;
-  width: 150px;
-  height: 180px;
-  border-radius: 100%;
+  width: 100%;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .cardSquadProfil p {
   width: 80%;
+  overflow: auto;
 }
