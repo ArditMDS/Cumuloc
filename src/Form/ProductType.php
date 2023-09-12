@@ -17,11 +17,7 @@ class ProductType extends AbstractType
             ->add('description')
             ->add('price')
             ->add('quantity_left')
-<<<<<<< HEAD
-            ->add('thumbnail')
-=======
             ->add('thumbnail', FileType::class)
->>>>>>> 93ff539f9f93f3ddac02a9476c50f522aedc28ba
         ;
     }
 
