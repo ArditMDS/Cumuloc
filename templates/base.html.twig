@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %} 
+            <link href="{{ asset('style/normalize.css') }}" rel="stylesheet" type="text/css"/>    
+            <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css"/>    
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        <nav>
+            <img class="logoHomePage" src="uploads/logo.png">
+            <ul>
+                <li>
+                    <a href="#"> Accueil </a>
+                </li>
+                <li>
+                    <a href="#"> Nos Produits </a>
+                </li>
+                <li>
+                    <a href="#"> Recherche </a>
+                </li>
+                <li>
+                    <a href="#"> Contact </a>
+                </li>
+                <li class="login-button">
+                    <a href="#"> Se connecter </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="homepageMain">
+            <h1>La location de nuage à porté de main !</h1>
+                <section class="containerCloudCard">
+                    <h2>Nos produits phare</h2>
+                    <article class="cloudCard">
+                        <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
+                        <div class="containerNameCloud">
+                            <div class="containerNameCloudDetail">
+                                <p>Nom</p>
+                                <p>Prix</p>
+                            </div>
+                            <button class="rent-button">Louer</button>
+                        </div>
+                    </article><article class="cloudCard">
+                        <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
+                        <div class="containerNameCloud">
+                            <div class="containerNameCloudDetail">
+                                <p>Nom</p>
+                                <p>Prix</p>
+                            </div>
+                            <button class="rent-button">Louer</button>
+                        </div>
+                    </article><article class="cloudCard">
+                        <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
+                        <div class="containerNameCloud">
+                            <div class="containerNameCloudDetail">
+                                <p>Nom</p>
+                                <p>Prix</p>
+                            </div>
+                            <button class="rent-button">Louer</button>
+                        </div>
+                    </article>
+                    <article class="cloudCard">
+                        <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
+                        <div class="containerNameCloud">
+                            <div class="containerNameCloudDetail">
+                                <p>Nom</p>
+                                <p>Prix</p>
+                            </div>
+                            <button class="rent-button">Louer</button>
+                        </div>
+                    </article>
+                </section>
+            <section class="containerSquad">
+                <h2>Notre équipe</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae veniam consequuntur optio hic. Totam, error rem? Voluptates doloremque, reiciendis autem libero sint animi non, maxime, tempora eius beatae nulla temporibus nemo ut! Nobis blanditiis omnis veniam quisquam, vitae reprehenderit? In porro voluptates sapiente eligendi sint. Ea exercitationem culpa aliquam cum.
+                </p>
+                <article class="containerSquadProfil">
+                    <div class="cardSquadProfil">
+                        <img src="uploads/squeezie.jpg" alt="" />
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio repellendus laboriosam delectus rerum, illum eaque cum sint doloribus accusantium saepe ullam alias facilis sed recusandae voluptate sit, ex laborum!</p>
+                    </div>
+                    <div class="cardSquadProfil">
+                        <img src="uploads/squeezie.jpg" alt="" />
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio repellendus laboriosam delectus rerum, illum eaque cum sint doloribus accusantium saepe ullam alias facilis sed recusandae voluptate sit, ex laborum!</p>
+                    </div>
+                    <div class="cardSquadProfil">
+                        <img src="uploads/squeezie.jpg" alt="" />
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio repellendus laboriosam delectus rerum, illum eaque cum sint doloribus accusantium saepe ullam alias facilis sed recusandae voluptate sit, ex laborum!</p>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+        <footer>
+            <p>© comuloc.com tous droits réservés</p>
+        </footer>
+        {% endblock %}
+    </body>
+        {% block javascripts %}
+        {% endblock %}
+</html>
