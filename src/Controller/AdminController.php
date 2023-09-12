@@ -32,8 +32,6 @@ class AdminController extends AbstractController
                 $originalFileName = pathinfo($thumbnailName->getClientOriginalName(), PATHINFO_FILENAME);
 
                 $newFileName = md5(uniqid()) . '.' . $thumbnailName->guessExtension();
-
-
                 try {
                     $thumbnailName->move(
                         $this->getParameter('uploads'),
