@@ -14,7 +14,7 @@ class DefaultController extends AbstractController
     {
         $clouds = $productsRepository->findAll();
 
-        return $this->render("base.html.twig", [
+        return $this->render("home.html.twig", [
             'clouds' => $clouds,
         ]);
     }
