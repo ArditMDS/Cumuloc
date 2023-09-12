@@ -176,3 +176,12 @@ footer {
 .cardSquadProfil p {
   width: 80%;
 }
+
+.productsMain {
+  min-height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 70px;
+  padding: 20px;
+}
