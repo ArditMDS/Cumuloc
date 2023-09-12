@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}   
+            <link href="{{ asset('style/form.css') }}" rel="stylesheet" type="text/css"/>    
+        {% endblock %}
+
 {% block title %}Hello AdminController!{% endblock %}
 
 {% block body %}
@@ -12,9 +16,54 @@
         <div>
             {{ form_errors(form) }}
         </div>
-        <div>
+        <div class="form-field">
+            <div class="form-label">
+                {{ form_label(form.name, null, {
+                    label: 'Nom du nuage'
+                })}}
+            </div>
             <div>
-                {{ form_row(form) }}
+                {{ form_widget(form.name, {'attr': {'class': 'form-input'}}) }}
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">
+                {{ form_label(form.description, null, {
+                    label: 'Description'
+                })}}
+            </div>
+            <div>
+                {{ form_widget(form.description, {'attr': {'class': 'form-input'}}) }}
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">
+                {{ form_label(form.price, null, {
+                    label: 'Prix'
+                })}}
+            </div>
+            <div>
+                {{ form_widget(form.price, {'attr': {'class': 'form-input'}}) }}
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">
+                {{ form_label(form.quantity_left, null, {
+                    label: 'Stock'
+                })}}
+            </div>
+            <div>
+                {{ form_widget(form.quantity_left, {'attr': {'class': 'form-input'}}) }}
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">
+                {{ form_label(form.thumbnail, null, {
+                    label: 'Thumbnail'
+                })}}
+            </div>
+            <div>
+                {{ form_widget(form.thumbnail, {'attr': {'class': 'form-input'}}) }}
             </div>
         </div>
         <button type="submit">Valider</button>
