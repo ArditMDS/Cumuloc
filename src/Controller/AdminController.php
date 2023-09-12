@@ -43,6 +43,7 @@ class AdminController extends AbstractController
                     echo $e;
                 }
 
+                $product->setThumbnail($newFileName);
                 $this->em->persist($product);
                 $this->em->flush();
 
