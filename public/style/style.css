@@ -120,7 +120,8 @@ h2 {
 
 .cloudThumbnail {
   width: 100%;
-
+  object-fit: cover;
+  height: 100px;
 }
 
 .containerNameCloud {
@@ -199,7 +200,6 @@ h2 {
 }
 
 .productsMain {
-  min-height: 75vh;
   width: 80%;
   margin: auto;
   display: flex;
