@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@keyframes cloudMoveToRight {
+  0% {
+    transform: translateX(-60%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes cloudMoveToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+/* * {
+  box-shadow: 0 0 3px red inset;
+} */
+
 :root {
   --main-bg-color: #0F2C59;
   --secondary-bg-color: #4F709C; 
@@ -294,6 +318,54 @@ footer p {
 .rentLink {
   width: 100%;
 }
+
+.cloudWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  /* transform: translateX(-100%); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footerCloud1 {
+  animation: cloudMoveToRight 50s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud2 {
+  animation: cloudMoveToRight 25s 2s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud3 {
+  animation: cloudMoveToRight 30s 4s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud4 {
+  animation: cloudMoveToLeft 50s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud5 {
+  animation: cloudMoveToLeft 25s 2s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud6 {
+  animation: cloudMoveToLeft 30s 4s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+
 
 .showProductImageContainer {
   position: relative;
