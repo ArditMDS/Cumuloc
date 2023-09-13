@@ -17,7 +17,12 @@ class ProductType extends AbstractType
             ->add('description')
             ->add('price')
             ->add('quantity_left')
-            ->add('thumbnail', FileType::class)
+            ->add('thumbnail', FileType::class, [
+                'label' => false,
+                'data_class' => null,
+                'required' => false,
+                'mapped' => false,
+            ])
         ;
     }
 

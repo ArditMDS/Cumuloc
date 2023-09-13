@@ -1,4 +1,9 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %} 
+    <link href="{{ asset('style/normalize.css') }}" rel="stylesheet" type="text/css"/>    
+    <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('style/admin.css') }}" rel="stylesheet" type="text/css"/>
+{% endblock %}
 {% block content %}
     <main class="productsMain">
         <h2 class="productsTitle">Tous nos Produits</h2>
