@@ -240,6 +240,7 @@ footer p {
 .footerLinks li {
   font-size: 15px;
 }
+
 .footerLinks li a {
   opacity: .7;
   transition: .3s;
