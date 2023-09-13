@@ -93,6 +93,12 @@ li {
 }
 
 .logoHomePage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoHomePage img {
   height: 50%;
 }
 
@@ -106,7 +112,7 @@ a {
   background-image: url("https://giphy.com/gifs/dominosukroi-animation-happy-l0Exp9C8MtM0fuWDC");
   border: 2px solid white;
   border-radius: 10px;
-  transition: .350ms ease-in-out;
+  transition: .5s ease-in-out;
   cursor: pointer;
 }
 
