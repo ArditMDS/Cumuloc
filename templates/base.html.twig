@@ -6,7 +6,6 @@
         <title>{% block title %}Cumuloc{% endblock %}</title>
         <link rel="icon" href="{{ asset('favicon.ico')}}" />
         {% block stylesheets %} 
-            {{ encore_entry_link_tags('app') }}
             <link href="{{ asset('style/normalize.css') }}" rel="stylesheet" type="text/css"/>    
             <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css"/>
             <link href="{{ asset('style/form.css') }}" rel="stylesheet" type="text/css"/> 
@@ -30,7 +29,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20"><path fill="currentColor" d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1z"/></svg>
                 </li>
                 <li class="navLinks login-button">
-                    <a href="#"> Se connecter </a>
+                    <a href="/admin/products"> Se connecter </a>
                 </li>
             </ul>
         </nav>
@@ -75,6 +74,5 @@
         {% endblock %}
     </body>
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
         {% endblock %}
 </html>
