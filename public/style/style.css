@@ -110,6 +110,7 @@ h1, h2, h3, h4{
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .homepageMain h1 {
@@ -125,7 +126,7 @@ h1, h2, h3, h4{
 .containerCloudCard{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   min-width: 200px;
   margin: auto;
   justify-content: space-around;
@@ -366,5 +367,9 @@ footer p {
 }
 
 .contactImage {
+  width: 100%;
+}
+
+.sectionProductsHype{
   width: 100%;
 }
