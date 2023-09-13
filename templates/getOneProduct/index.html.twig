@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <main class="productsMain">
+        <div class="showProductContainer">
+            <section class="showProductImageContainer">
+                <img class="showProductImage" src="../uploads/{{ productInfo.thumbnail }}" alt="">
+                <p class="priceTag">{{ productInfo.price }} €</p>
+            </section>
+            <section class="showProductData">
+                <div>
+                    <h1>
+                        {{ productInfo.name }}
+                    </h1>
+                    <p>
+                        Description: {{ productInfo.description }}
+                    </p>
+                </div>
+                <div>
+                    <label for="options">Options du nuage: </label>
+                    <select class="optionsSelector" name="options" id="">
+                        <option value="Cirrus">Cirrus (nuages élevés)</option>
+                        <option value="Stratus">Stratus (nuages bas à développement horizontal)</option>
+                        <option value="Cumulus">Cumulus (nuages généralement bas à développement vertical)</option>
+                    </select>
+                    <p>Quantité restante: {{ productInfo.quantityleft }}</p>
+                    <button class="rentButton">Louer</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+{% endblock %}
