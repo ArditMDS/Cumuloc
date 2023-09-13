@@ -43,6 +43,30 @@ li {
   margin: 1em;
 }
 
+.navLinks {
+  position: relative;
+  opacity: .7;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.navLinks:hover {
+  opacity: 1;
+}
+
+.navLinks > svg {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 32%;
+  transition: .3s ease-in-out;
+}
+
+.navLinks:hover svg {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
 .logoHomePage {
   height: 50%;
 }
@@ -54,7 +78,7 @@ a {
 
 .login-button {
   padding: 0.5em;
-  background-color: var(--secondary-bg-color);
+  background-image: url("https://giphy.com/gifs/dominosukroi-animation-happy-l0Exp9C8MtM0fuWDC")
   border: 2px solid white;
   border-radius: 10px;
   transition: .350ms ease-in-out;
@@ -154,7 +178,7 @@ h2 {
   background-color: var(--secondary-bg-color);
   transition: .3s;
 }
-.rent-button:hover {
+.rentButton:hover {
   transform: scale(1.03);
 }
 
@@ -222,6 +246,7 @@ h2 {
 }
 
 footer {
+  position: relative;
   background-color: var(--main-bg-color);
   height: 90px;
   display: flex;
@@ -255,6 +280,7 @@ footer p {
   opacity: .7;
   transition: .3s;
 }
+
 .footerLinks li a:hover {
   opacity: 1;
 }
@@ -265,6 +291,15 @@ footer p {
 .footerSocialNetworks li a svg:hover {
   transform: scale(1.2);
 }
+
+.cloudWrapper {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+}
+
 
 .rentLink {
   width: 100%;
