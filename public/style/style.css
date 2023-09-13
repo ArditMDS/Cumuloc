@@ -15,9 +15,13 @@ body {
   background-size: cover; */
 }
 
+main {
+  min-height: calc(100vh - 210px);
+}
+
 nav {
   background-color: var(--main-bg-color);
-  height: 15vh;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,7 +140,7 @@ h2 {
   width: 90%;
 }
 
-.rent-button {
+.rentButton {
   width: 100%;
   height: 50px;
   border: none;
@@ -213,7 +217,7 @@ h2 {
 }
 footer {
   background-color: var(--main-bg-color);
-  min-height: 10vh;
+  height: 90px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -253,4 +257,52 @@ footer p {
 }
 .footerSocialNetworks li a svg:hover {
   transform: scale(1.2);
+}
+
+.rentLink {
+  width: 100%;
+}
+
+.showProductImageContainer {
+  position: relative;
+  width: 60%;
+  display: grid;
+  place-content: center;
+}
+.showProductImage{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.showProductContainer{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.showProductData {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priceTag {
+  position: absolute;
+  background-color: var(--main-bg-color);
+  transform: rotate(-15deg);
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--main-txt-color);
+  top: 0;
+  margin: 0;
+  left: -20px;
+}
+.optionsSelector {
+  border: none;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-txt-color);
+  height: 40px;
+  width: 100%;
 }
