@@ -246,6 +246,7 @@ h2 {
 }
 
 footer {
+  position: relative;
   background-color: var(--main-bg-color);
   height: 90px;
   display: flex;
@@ -290,6 +291,15 @@ footer p {
 .footerSocialNetworks li a svg:hover {
   transform: scale(1.2);
 }
+
+.cloudWrapper {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+}
+
 
 .rentLink {
   width: 100%;
