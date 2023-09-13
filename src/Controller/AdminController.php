@@ -90,14 +90,15 @@ class AdminController extends AbstractController
                             $this->getParameter('uploads'),
                         $newFileName
                     );
+                    $currentProduct->setThumbnail($newFileName);
                     } catch (FileException $e) {
                         echo $e;
                     }
-               }
+                } else {
+                    $currentProduct->setThumbnail($thumbnailName);
+                }
             }
 
-            $currentProduct->setThumbnail($thumbnailName);
-           
             $this->em->persist($currentProduct);
             $this->em->flush();
 

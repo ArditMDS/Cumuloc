@@ -118,6 +118,9 @@ h2 {
   border-radius: 10px;
   width: calc(100%/5 - 40px);
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 40px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -125,7 +128,8 @@ h2 {
 .cloudThumbnail {
   width: 100%;
   object-fit: cover;
-  height: 100px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 .containerNameCloud {
@@ -212,9 +216,11 @@ h2 {
   gap: calc(100%/15);
   padding: 20px;
 }
+
 .productsTitle {
   width: 80%;
 }
+
 footer {
   background-color: var(--main-bg-color);
   height: 90px;
