@@ -6,6 +6,7 @@
         <title>{% block title %}Cumuloc{% endblock %}</title>
         <link rel="icon" href="{{ asset('favicon.ico')}}" />
         {% block stylesheets %} 
+            {{ encore_entry_link_tags('app') }}
             <link href="{{ asset('style/normalize.css') }}" rel="stylesheet" type="text/css"/>    
             <link href="{{ asset('style/style.css') }}" rel="stylesheet" type="text/css"/>
             <link href="{{ asset('style/form.css') }}" rel="stylesheet" type="text/css"/> 
@@ -74,5 +75,6 @@
         {% endblock %}
     </body>
         {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
         {% endblock %}
 </html>
