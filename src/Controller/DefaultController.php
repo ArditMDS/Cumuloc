@@ -12,7 +12,7 @@ class DefaultController extends AbstractController
     #[Route('/', name: 'app_default')]
     public function index(ProductsRepository $productsRepository): Response   
     {
-        $clouds = $productsRepository->findAll();
+        $clouds = $productsRepository->findBy( [], array('id' => 'DESC') , 4, []);
 
         return $this->render("home.html.twig", [
             'clouds' => $clouds,

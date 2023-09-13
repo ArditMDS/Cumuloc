@@ -2,48 +2,24 @@
 {% block content %}
   <main class="homepageMain">
     <h1>La location de nuage à porté de main !</h1>
-        <section>
+        <section class="sectionProductsHype">
             <h2>Nos produits phares</h2>
             <article class="containerCloudCard">
-              <section class="cloudCard">
-                  <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
-                  <div class="containerNameCloud">
-                      <div class="containerNameCloudDetail">
-                          <p>Nom</p>
-                          <p>Prix</p>
-                      </div>
-                      <button class="rentButton">Louer</button>
-                  </div>
-              </section><section class="cloudCard">
-                  <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
-                  <div class="containerNameCloud">
-                      <div class="containerNameCloudDetail">
-                          <p>Nom</p>
-                          <p>Prix</p>
-                      </div>
-                      <button class="rentButton">Louer</button>
-                  </div>
-              </section><section class="cloudCard">
-                  <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
-                  <div class="containerNameCloud">
-                      <div class="containerNameCloudDetail">
-                          <p>Nom</p>
-                          <p>Prix</p>
-                      </div>
-                      <button class="rentButton">Louer</button>
-                  </div>
-              </section>
-              <section class="cloudCard">
-                  <img src="uploads/logo.png" alt="nuage" class="cloudThumbnail">
-                  <div class="containerNameCloud">
-                      <div class="containerNameCloudDetail">
-                          <p>Nom</p>
-                          <p>Prix</p>
-                      </div>
-                      <button class="rentButton">Louer</button>
-                  </div>
-            </section>
-          </article
+                {% for cloud in clouds %}
+                    <section class="cloudCard">
+                        <img src="uploads/{{ cloud.thumbnail }}" alt="nuage" class="cloudThumbnail">
+                        <div class="containerNameCloud">
+                            <div class="containerNameCloudDetail">
+                                <p>{{ cloud.name }}</p>
+                                <p>{{ cloud.price }}€</p>
+                            </div>
+                            <a class="rentLink" href="/products/{{ cloud.id }}">
+                                <button class="rentButton">Louer</button>
+                            </a>
+                        </div>
+                    </section>
+                {% endfor %}
+          </article>
         </section>
     <section class="containerSquad">
         <h2>Notre équipe</h2>

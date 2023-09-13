@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@keyframes cloudMoveToRight {
+  0% {
+    transform: translateX(-60%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes cloudMoveToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+/* * {
+  box-shadow: 0 0 3px red inset;
+} */
+
 :root {
   --main-bg-color: #0F2C59;
   --secondary-bg-color: #4F709C; 
@@ -110,6 +134,7 @@ h1, h2, h3, h4{
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .homepageMain h1 {
@@ -125,7 +150,7 @@ h1, h2, h3, h4{
 .containerCloudCard{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   min-width: 200px;
   margin: auto;
   justify-content: space-around;
@@ -247,6 +272,7 @@ h2 {
 }
 
 footer {
+  overflow: hidden;
   position: relative;
   background-color: var(--main-bg-color);
   height: 90px;
@@ -293,18 +319,63 @@ footer p {
   transform: scale(1.2);
 }
 
-.cloudWrapper {
+.cloudWrapperRight {
   position: absolute;
   left: 0;
-  transform: translateX(-100%);
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+.cloudWrapperLeft {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 .rentLink {
   width: 100%;
 }
+
+#footerCloud1 {
+  animation: cloudMoveToRight 60s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud2 {
+  animation: cloudMoveToRight 70s 2s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud3 {
+  animation: cloudMoveToRight 80s 4s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud4 {
+  animation: cloudMoveToLeft 80s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud5 {
+  animation: cloudMoveToLeft 60s 2s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#footerCloud6 {
+  animation: cloudMoveToLeft 70s 4s infinite both linear;
+  width: 100%;
+  opacity: 0.8;
+}
+
+
 
 .showProductImageContainer {
   position: relative;
@@ -366,5 +437,9 @@ footer p {
 }
 
 .contactImage {
+  width: 100%;
+}
+
+.sectionProductsHype{
   width: 100%;
 }
