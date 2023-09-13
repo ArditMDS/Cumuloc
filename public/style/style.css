@@ -307,3 +307,22 @@ footer p {
   height: 40px;
   width: 100%;
 }
+
+.containerContact {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  gap: 100px;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.contactImageContainer {
+  width: 40%;
+}
+
+.contactImage {
+  width: 100%;
+}
