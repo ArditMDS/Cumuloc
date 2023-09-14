@@ -12,8 +12,9 @@
                     <img src="uploads/{{ product.thumbnail }}" alt="nuage" class="cloudThumbnail">
                     <div class="containerNameCloud">
                         <div class="containerNameCloudDetail">
-                            <p>{{ product.name }}</p>
-                            <p>{{ product.price }}€</p>
+                            <h3>{{ product.name }}</h3>
+                            <p id="cloudPrice">{{ product.price }}€</p>
+                            <p id="cloudDescription">{{ product.description }}€</p>
                         </div>
                         <a href="/products/{{ product.id }}" class="rentLink"><button class="rentButton">Louer</button></a>
                     </div>

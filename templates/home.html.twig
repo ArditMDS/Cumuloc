@@ -10,8 +10,9 @@
                         <img src="uploads/{{ cloud.thumbnail }}" alt="nuage" class="cloudThumbnail">
                         <div class="containerNameCloud">
                             <div class="containerNameCloudDetail">
-                                <p>{{ cloud.name }}</p>
-                                <p>{{ cloud.price }}€</p>
+                                <h3>{{ cloud.name }}</h3>
+                                <p id="cloudPrice">{{ cloud.price }}€</p>
+                                <p id="cloudDescription">{{ cloud.description}}</p>
                             </div>
                             <a class="rentLink" href="/products/{{ cloud.id }}">
                                 <button class="rentButton">Louer</button>
@@ -35,7 +36,7 @@
             </div>
             <div class="cardSquadProfil">
                 <img src="uploads/jdg.jpg" alt="" />
-                <p>Issus du domaine de l'hôtellerie et passionné depuis longtemps d'informatique, j'ai choisi de me reconvertir dans le développement web</p>
+                <p>Issus du domaine de l'hôtellerie et passionné depuis longtemps d'informatique, j'ai choisi de me reconvertir dans le développement web, je suis en recherche d'alternance</p>
             </div>
             <div class="cardSquadProfil">
                 <img src="uploads/Bob-leponge.png" alt="" />
