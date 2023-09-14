@@ -3,63 +3,63 @@
 {% block title %}Crée un nuage{% endblock %}
 
 {% block content %}
-<main class="homepageMain">
-    <h1>Création de nuage</h1>
-    {{ form_start(form) }}
-        <div>
-            {{ form_errors(form) }}
-        </div>
-        <div class="form-field">
-            <div class="form-label">
-                {{ form_label(form.name, null, {
-                    label: 'Nom du nuage'
-                })}}
-            </div>
+    <main class="homepageMain">
+        <h1>Création de nuage</h1>
+        {{ form_start(form) }}
             <div>
-                {{ form_widget(form.name, {'attr': {'class': 'form-input'}}) }}
+                {{ form_errors(form) }}
             </div>
-        </div>
-        <div class="form-field">
-            <div class="form-label">
-                {{ form_label(form.description, null, {
-                    label: 'Description'
-                })}}
+            <div class="form-field">
+                <div class="form-label">
+                    {{ form_label(form.name, null, {
+                        label: 'Nom du nuage'
+                    })}}
+                </div>
+                <div>
+                    {{ form_widget(form.name, {'attr': {'class': 'form-input'}}) }}
+                </div>
             </div>
-            <div>
-                {{ form_widget(form.description, {'attr': {'class': 'form-input'}}) }}
+            <div class="form-field">
+                <div class="form-label">
+                    {{ form_label(form.description, null, {
+                        label: 'Description'
+                    })}}
+                </div>
+                <div>
+                    {{ form_widget(form.description, {'attr': {'class': 'form-input'}}) }}
+                </div>
             </div>
-        </div>
-        <div class="form-field">
-            <div class="form-label">
-                {{ form_label(form.price, null, {
-                    label: 'Prix (€)'
-                })}}
+            <div class="form-field">
+                <div class="form-label">
+                    {{ form_label(form.price, null, {
+                        label: 'Prix (€)'
+                    })}}
+                </div>
+                <div>
+                    {{ form_widget(form.price, {'attr': {'class': 'form-input'}}) }}
+                </div>
             </div>
-            <div>
-                {{ form_widget(form.price, {'attr': {'class': 'form-input'}}) }}
+            <div class="form-field">
+                <div class="form-label">
+                    {{ form_label(form.quantity_left, null, {
+                        label: 'Stock'
+                    })}}
+                </div>
+                <div>
+                    {{ form_widget(form.quantity_left, {'attr': {'class': 'form-input'}}) }}
+                </div>
             </div>
-        </div>
-        <div class="form-field">
-            <div class="form-label">
-                {{ form_label(form.quantity_left, null, {
-                    label: 'Stock'
-                })}}
+            <div class="form-field">
+                <div class="form-label">
+                    {{ form_label(form.thumbnail, null, {
+                        label: 'Image de nuage'
+                    })}}
+                </div>
+                <div>
+                    {{ form_widget(form.thumbnail, {'attr': {'class': 'form-input'}}) }}
+                </div>
             </div>
-            <div>
-                {{ form_widget(form.quantity_left, {'attr': {'class': 'form-input'}}) }}
-            </div>
-        </div>
-        <div class="form-field">
-            <div class="form-label">
-                {{ form_label(form.thumbnail, null, {
-                    label: 'Image de nuage'
-                })}}
-            </div>
-            <div>
-                {{ form_widget(form.thumbnail, {'attr': {'class': 'form-input'}}) }}
-            </div>
-        </div>
-        <button type="submit">Valider</button>
-    {{ form_end(form) }}
-</main>
+            <button type="submit">Valider</button>
+        {{ form_end(form) }}
+    </main>
 {% endblock %}

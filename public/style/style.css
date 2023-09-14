@@ -185,8 +185,8 @@ h2 {
 .cloudThumbnail {
   width: 100%;
   object-fit: cover;
-  height: 200px;
   border-radius: 10px;
+  height: 200px;
 }
 
 .containerNameCloud {
@@ -198,7 +198,25 @@ h2 {
 .containerNameCloudDetail {
   display:  flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 90%;
+  min-height: 200px;
+}
+
+.containerNameCloudDetail h3 {
+  font-family: var(--main-txt-family);
+  margin-top : 15px;
+  font-size: x-large;
+}
+
+
+#cloudPrice {
+  font-size: x-large;
+}
+
+#cloudDescription {
+  height: 180px;
+  overflow: hidden;
 }
 
 .rentButton {
