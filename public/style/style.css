@@ -283,7 +283,7 @@ footer {
   overflow: hidden;
   position: relative;
   /* background-color: var(--main-bg-color); */
-  height: 90px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
