@@ -276,6 +276,8 @@ h2 {
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+  height: 250px;
+  object-fit: cover;
 }
 
 .cardSquadProfil p {
@@ -421,6 +423,8 @@ footer p {
 .showProductImage{
   width: 100%;
   border-radius: 10px;
+  min-height: 500px;
+  object-fit: cover;
 }
 
 .showProductContainer{
@@ -444,7 +448,7 @@ footer p {
   padding: 10px;
   border-radius: 3px;
   color: var(--main-txt-color);
-  top: 0;
+  top: 100px;
   margin: 0;
   left: -20px;
 }
