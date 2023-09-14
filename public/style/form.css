@@ -35,23 +35,21 @@ form button:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 85%;
 }
 
 .form-input {
   border-radius: 15px;
   border:  none;
   background-color: var(--main-txt-color);
-  /* color: var(--main-txt-color); */
-  text-align: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .form-input {
   border-radius: 15px;
   border:  none;
   background-color: var(--main-txt-color);
-  /* color: var(--main-txt-color); */
-  text-align: center;
   display: flex;
   flex-direction: column;
 }
